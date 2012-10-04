@@ -1,33 +1,33 @@
-INSERT INTO user (id, name)
+INSERT INTO user (name)
 	VALUES 	
-	(1, "Jack Nolan"),
-	(2, "Adam Jonas"),
-	(3, "Bobby Fischer")
+	("Jack Nolan"),
+	("Adam Jonas"),
+	("Bobby Fischer");
 
-INSERT INTO quiz (id, name, owner_id)
+INSERT INTO quiz (name, owner_id)
 	VALUES
-	(1, "ruby vocab", 2)
-	(2, "javascript syntax", 1)
-	(3, "coffeescript", 1)
+	("ruby vocab", 2),
+	("javascript syntax", 1),
+	("coffeescript", 1);
 
-INSERT INTO question (id, content, answer_id, quiz_id)
+INSERT INTO question (content, answer_id, quiz_id)
 	VALUES
-	(1, "what does puts mean?", 1, 1)
-	(2, "how does you end terminate a line in js?", 2, 4)
-	(3, "is this better than js?", 3, 3)
-	(4, "what is the diff between puts and print?", 4, 1)
+	("what does puts mean?", 1, 1),
+	("how does you end terminate a line in js?", 2, 4),
+	("is this better than js?", 3, 3),
+	("what is the diff between puts and print?", 4, 1);
 
-INSERT INTO answer (id, content, question_id)
+INSERT INTO answer (content, question_id)
 	VALUES
-	(1, "put to screen", 1)
-	(4, ";", 2)
-	(3, "sometimes", 3)
-	(2, "puts always inserts a newline", 4)
+	("put to screen", 1),
+	(";", 2),
+	("sometimes", 3),
+	("puts always inserts a newline", 4);
 
 INSERT INTO user_response (user_id, question_id, answer_id, correct)
 VALUES
-	(1, 2, 4, 1)
-	(2, 1, 4, 0)
-	(1, 4, 1, 0)
+	(1, 2, 4, 1),
+	(2, 1, 4, 0),
+	(1, 4, 1, 0);
 
 	
