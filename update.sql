@@ -1,0 +1,1 @@
+ update user set name = "kid" where id = 1;
